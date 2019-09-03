@@ -1,0 +1,161 @@
+/**TEMPLATES:
+colour
+animator
+light
+business
+**/
+
+$template: business;
+
+
+@if $template=='colour' {}
+
+@if $template=='animator' {
+}
+
+@if $template=='light' {
+    .main-color {
+        background-color: #add8e6;
+    }
+
+    .navbar-nav a:hover{
+		text-decoration: none !important;
+		color: red !important;
+		font-size: 20px !important;
+	}
+
+    .textBox-color {
+        background-color: #72bcd4;
+    }
+
+    .secondary-color {
+        background-color: #e8f4f8;
+    }
+
+    .footer {
+        background-color: #1a4654;
+    }
+}
+
+@if $template=='business' {
+	.main-color {
+        background-color: #071418;
+        color: #ffffff;
+    }
+
+    .navbar-nav a:hover{
+		text-decoration: none !important;
+		color: red !important;
+		font-size: 20px !important;
+	}
+
+    .textBox-color {
+        background-color: #071418;
+        color: #ffffff;
+    }
+
+    .secondary-color {
+        background-color: #184553;
+        color: #ffffff;
+    }
+
+    .footer {
+        background-color: #1a4654;
+        height: 450px;
+    }
+}
+
+
+//*SETUP CLASSES*//
+.noSpace {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.copyright-text {
+    font-size: 0.9em;
+    color: darkgray;
+    background-color: #1a4654;
+}
+
+.ruler{
+	background-color: #ffffff;
+}
+
+.navbar-nav a{
+	text-decoration: none !important;
+	color: #ffffff;
+}
+
+.social-icons .fa{
+	font-size: 50px;
+}
+
+.social-icons .fa:hover{
+	text-decoration: none !important;  
+	color: #1a4654;
+}
+
+.footer hr{
+	opacity: 0.3;
+}
+
+//* COLORS: https://www.colorhexa.com/1a4654*//
+//*MEDIA QUERIES*//
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+//Small Phones 
+@media (min-width: 320px) {
+    h3 {
+        font-size: 0.8em;
+    }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    h3 {
+        font-size: 1em;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    h3 {
+        font-size: 1em;
+    }
+
+    p {
+        font-size: 0.7em;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    h3 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}
+
+
+
+.startup{
+	animation-name: startup-popup;
+	animation-duration: 4s;
+}
+//*KEYFRAMES*//
+@keyframes startup-popup{
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity: 1;
+	}
+}
